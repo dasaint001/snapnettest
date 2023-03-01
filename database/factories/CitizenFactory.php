@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 use App\Ward;
 
-class UserFactory extends Factory
+class CitizenFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -16,11 +16,11 @@ class UserFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->name(),
+            'full_name' => $this->faker->name(),
             'address' => $this->faker->streetAddress(),
             'gender' => $this->faker->randomElement(['male', 'female']),
             'phone' => $this->faker->phoneNumber(),
-            'ward_id' => Ward::all()->random()->id,
+            'ward_id' => 1,
         ];
     }
 

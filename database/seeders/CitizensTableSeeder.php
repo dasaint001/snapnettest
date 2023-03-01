@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\Citizen;
+use App\Citizen;
 use Illuminate\Database\Seeder;
 use App\Models\User;
 
